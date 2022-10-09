@@ -6,7 +6,9 @@ namespace Herencia
     {
         public static void Add(Usuario newUser)
         {
-            ///Falta codigo de API de twitter
+            ///Add User
+            ///Usar Polimorfismo para que el usuario sea pasajero o conductor (Pasajero, Conductor y ConductorPool)
+            ///Llamar a TwitterAPI para publicar la foto y el mensaje
         }
     }
 }

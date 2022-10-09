@@ -19,5 +19,9 @@ namespace Herencia
             this.CI = newCI;
             this.Foto = newFoto;
         }
+
+        ///AddVehiculo
+        ///RemoveVehiculo
+        ///
     }
 }
