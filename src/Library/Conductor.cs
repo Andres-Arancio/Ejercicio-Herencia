@@ -8,7 +8,6 @@ namespace Herencia
         public List<Calificacion> Calificaciones {get ; set ;}
         public int CalificacionTotal {get ; set ;}
         public Vehiculo Vehiculo {get ; set ;}
-        public string Bio {get ; set ;}
 
         public Conductor(string newNombre, string newApellido, string newCI, string newFoto)
             : base(newNombre, newApellido, newCI, newFoto)
@@ -35,8 +34,18 @@ namespace Herencia
             this.CalificacionTotal = auxval / this.Calificaciones.Count;
         }
 
-        ///AddVehiculo
-        ///RemoveVehiculo
-        ///ChangeBio
+        public void AddVehiculo(string newMatricula)
+        {
+            Vehiculo newVehiculo = new Vehiculo();
+            newVehiculo.Matricula = newMatricula;
+            this.Vehiculo = newVehiculo;
+        }
+        
+        public void RemoveVehiculo(string oldMatricula)
+        {
+            this.Vehiculo = null;
+            Console.WriteLine($"Vehiculo {this.Vehiculo.Matricula} de {this.Nombre} {this.Apellido} ha sido eliminado.");
+        }
+        
     }
 }

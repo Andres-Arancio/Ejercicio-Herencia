@@ -11,6 +11,7 @@ namespace Herencia
         public string Apellido {get ; set ;}
         public string CI {get ; set ;}
         public string Foto {get ; set ;}
+        public string Bio {get ; set ;}
 
         protected Usuario(string newNombre, string newApellido, string newCI, string newFoto)
         {
@@ -19,9 +20,10 @@ namespace Herencia
             this.CI = newCI;
             this.Foto = newFoto;
         }
+        public void ChangeBio(string newBio)
+        {
+            this.Bio = newBio;
+        }
 
-        ///AddVehiculo
-        ///RemoveVehiculo
-        ///
     }
 }
