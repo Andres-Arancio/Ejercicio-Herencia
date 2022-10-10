@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace PII_Herencia
+namespace Herencia
 {
     class Program
     {
@@ -35,6 +35,7 @@ namespace PII_Herencia
             Se publica en Twitter nuevo registro de pasajero!
 
             */
+            Usuario pasajero1
         }
     }
 }
