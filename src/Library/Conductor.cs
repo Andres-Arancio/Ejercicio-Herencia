@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Herencia
 {
-    public abstract class Conductor : Usuario
+    public class Conductor : Usuario
     {
         public List<Calificacion> Calificaciones {get ; set ;}
         public int CalificacionTotal {get ; set ;}

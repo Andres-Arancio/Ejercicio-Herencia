@@ -35,7 +35,20 @@ namespace Herencia
             Se publica en Twitter nuevo registro de pasajero!
 
             */
-            Usuario pasajero1
+            Usuario pasajero1 = new Pasajero("Jorge","Messi","111111-1", "C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_01_test_noCognitvecompliant.jpg");
+            Usuario pasajero2 = new Pasajero("Pericles","Nose","222222-2","C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_02_test_Cognitivecompliant.jfif");
+            Usuario pasajero3 = new Pasajero("Eh","Neymar","333333-3","C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_03_test_200px_png");
+
+            Usuario conductor1 = new Conductor("Manejador", "Solouno", "444444-4", "");
+            Usuario conductor2 = new ConductorPool("Manejador", "Multiple", "555555-5", "", 4);
+
+            UcuRideShare rideShare = new UcuRideShare();
+
+            rideShare.Add(pasajero1);
+            rideShare.Add(pasajero2);
+            rideShare.Add(pasajero3);
+            rideShare.Add(conductor1);
+            rideShare.Add(conductor2);
         }
     }
 }

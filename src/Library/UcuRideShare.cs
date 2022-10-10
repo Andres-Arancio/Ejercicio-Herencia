@@ -14,7 +14,7 @@ namespace Herencia
         {
             pool.Add(u);
             var twitter = new TwitterImage();
-            Console.WriteLine(twitter.PublishToTwitter("text", @"PathToImage.png"));
+            Console.WriteLine(twitter.PublishToTwitter("Nuevo usuario de UCURideShare", u.Foto));
         }
     }
 
