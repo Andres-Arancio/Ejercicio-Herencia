@@ -1,14 +1,21 @@
 using System;
-
+using System.Collections.Generic;
+using TwitterUCU;
 namespace Herencia
 {
     public class UcuRideShare
     {
-        public static void Add(Usuario newUser)
+        public static List<Usuario> pool = new List<Usuario>();
+        public UcuRideShare()
         {
-            ///Add User
-            ///Usar Polimorfismo para que el usuario sea pasajero o conductor (Pasajero, Conductor y ConductorPool)
-            ///Llamar a TwitterAPI para publicar la foto y el mensaje
+
+        }
+        public void Add(Usuario u)
+        {
+            pool.Add(u);
+            var twitter = new TwitterImage();
+            Console.WriteLine(twitter.PublishToTwitter("text", @"PathToImage.png"));
         }
     }
+
 }
