@@ -39,8 +39,8 @@ namespace Herencia
             Usuario pasajero2 = new Pasajero("Pericles","Nose","222222-2","C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_02_test_Cognitivecompliant.jfif");
             Usuario pasajero3 = new Pasajero("Eh","Neymar","333333-3","C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_03_test_200px_png");
 
-            Usuario conductor1 = new Conductor("Manejador", "Solouno", "444444-4", "");
-            Usuario conductor2 = new ConductorPool("Manejador", "Multiple", "555555-5", "", 4);
+            Usuario conductor1 = new Conductor("Manejador", "Solouno", "444444-4", "C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_04_exceptionimage.png");
+            Usuario conductor2 = new ConductorPool("Manejador", "Multiple", "555555-5", "C:/Users/aaran/OneDrive/Documentos/Programacion II/Programas/Repositorios/Ejercicio-Herencia/asset/foto_04_exceptionimage.png", 4);
 
             UcuRideShare rideShare = new UcuRideShare();
 
